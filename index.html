@@ -1,0 +1,77 @@
+<!-- 
+    Word Guessing Game
+    10th Feb'24
+    Sachin
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    
+
+    <header class="navbar">
+        <img class="logo" src="logo.gif" alt="Logo">
+
+        <nav>
+           <a>Home</a>
+           <a>Previous Score</a>
+           <a>Connect with Friends</a>
+           <a>Login/SignUp</a> 
+        </nav>
+    </header>
+
+    <main>
+        <div class="centerdiv">
+            <p id = 'titlep'>Guess The Word</p>
+
+            <input type="button" name="ngbtn" id="ngbtn" onclick="newgameFunc()" value="New Game">
+
+            <center>
+                <div class="hintcontainer">
+                    <p id = "hintp">Hint Goes Here!</p>
+                </div>
+            </center>
+
+            <p id="timer">Timer</p>
+
+            <div class="inputs">
+                <input type="text" name="letter" id="letter1" maxlength=1>
+                <input type="text" name="letter" id="letter2" maxlength=1>
+                <input type="text" name="letter" id="letter3" maxlength=1>
+                <input type="text" name="letter" id="letter4" maxlength=1>
+                <input type="text" name="letter" id="letter5" maxlength=1>
+
+            </div>
+
+            <input type="button" name="cbtn" id="cbtn" onclick="clearFunc()" value="Clear Word">
+            <input type="button" name="sbtn" id="sbtn" onclick="submitFunc()" value="Submit">
+            <input type="button" name="nwbtn" id="nwbtn" onclick="nextwordFunc()" value="Next Word">
+
+            <p id="result">Current Score = <span id ='scorespan'>0</span></p>    
+
+        </div>
+    </main>
+
+    <footer>
+        <pre>
+            Contact :- +91-97367-10288    Email :- kumarsachin10188@gmail.com 
+        All rights reserved   
+
+        </pre>
+        
+    </footer>
+    
+</body>
+</html>
+
